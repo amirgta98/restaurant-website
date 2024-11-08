@@ -1,0 +1,52 @@
+.active-accordion{
+    background-color: var(--color-hover) !important;
+    color:var(--color-light) !important;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: var(--color-hover) !important;
+    color: var(--color-light);
+
+}
+.products-container{
+    width: 69%;
+    margin: 0 auto;
+}
+.prevAdress li{
+    transition: 0.2s;
+    cursor: pointer;
+    border: none;
+}
+.prevAdress li:hover{
+    background-color: var(--color-gray);
+}
+.prevAdress li.active{
+    background-color: var(--color-gray);
+    color: var(--color-dark);
+    border: none;
+}
+.back-icon{
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.back-icon svg{
+    width: 3rem;
+}
+.btn{
+    text-align: start;
+}
+.myAdress-Btn.accordion-button{
+    border-radius: var(--bs-border-radius) !important;
+}
+.accordion-button::after {
+    width: var(--bs-accordion-btn-icon-width);;
+}
+@media (orientation: portrait) {
+    .products-container{
+        width: 100%;
+        margin: unset;
+    }
+    footer{
+        visibility: hidden;
+    }
+}

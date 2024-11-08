@@ -1,0 +1,75 @@
+.Login-container{
+  width: 80%;
+} 
+.form-content{
+  width: 40%;
+  aspect-ratio: 1/1;
+  overflow: auto;
+}
+.form-content >div:not(.form-navigation){
+  width: 80%;
+  margin: 10% auto 0 auto;
+}
+.img-content{
+  width: 60%;
+}
+.img-content .main-img{
+  /* aspect-ratio: 1/1; */
+  height: 100%;
+}
+
+.form-navigation{
+  height: 4rem;
+  margin-bottom: 3%;
+}
+.form-navigation .back-icon img{
+  height: 80%;
+}
+.form-navigation .logo-icon img{
+  height: 100%;
+}
+.form-navigation .logo-icon{
+  border: 3px solid var(--color-gray);
+  border-radius: 50%;
+  padding: 0.5%;
+}
+.nav-sm{
+  margin-bottom: 3%;
+}
+@media (orientation: portrait) {
+  .Login-container{
+    flex-direction: column;
+  }
+  .form-content{
+    width: 100%;
+    order: 2;
+    aspect-ratio: unset;
+  }
+  .img-content{
+    width: 100%;
+    order: 1;
+  }
+  .img-content .main-img{
+    aspect-ratio: 1.4/1;
+  }
+  .nav-xl{
+    display: none !important;
+  }
+  .nav-sm{
+    display: flex !important;
+  }
+  .form-navigation.nav-sm{
+    height:3.5rem;
+  }
+  .form-content >div:not(.form-navigation) {
+    width: 100%;
+}
+.Login-container {
+  width: 95%;
+}
+}
+@media (orientation: landscape) and (max-width:960px) {
+  .form-navigation.nav-xl{
+    height: 3rem;
+  }
+}

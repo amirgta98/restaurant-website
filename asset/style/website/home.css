@@ -1,0 +1,389 @@
+.navbar {
+  height: 100px;
+}
+
+.navlogin .btn {
+  border-radius: 100rem;
+}
+
+.navbar>.navberpc {
+  padding: 0.5% 5%;
+}
+
+
+.hamburger-btn svg {
+  height: 70%;
+}
+
+.navControl {
+  gap: 10%;
+}
+
+.navbarMobileContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #21212188;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.navbarMobileContainer.show {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+
+
+.navbarMobile {
+  background-color: #fff;
+  width: 70vw;
+  height: 100vh;
+  transform: translate(-100%);
+  transition: 0.5s;
+}
+
+.navbarMobileContainer.show>.navbarMobile {
+  transform: translate(0%);
+
+}
+
+.navLogo {
+  height: 100%;
+}
+
+.navLogo>img {
+  background-color: #f0f0f0;
+  border: solid 0.1rem #ccc;
+
+}
+
+.closeNavbarBtn {
+  width: 15%;
+}
+
+.hamburger-btn {
+  display: none;
+}
+
+/* -------------------------- */
+/*-------- end navbar-------- */
+/* -------------------------- */
+
+.categury-swiper-container {
+  background-color: #fff;
+  z-index: 100;
+}
+
+/* carousel */
+.carousel .carousel-inner .carousel-item {
+  transition: 0.5s;
+}
+
+.carousel .carousel-item {
+  aspect-ratio: 2.5/1;
+}
+
+.spaceFromOrderBtn {
+  display: none;
+}
+
+/* -------------------------- */
+/*-------- category -------- */
+/* -------------------------- */
+.cat-item {
+  width: unset;
+  user-select: none;
+  -webkit-user-drag: none;
+
+  overflow: hidden;
+}
+
+.cat-img {
+  width: 6rem;
+}
+
+.cat-img img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100vw;
+}
+
+.cat-item {
+  background-color: #cccccc36;
+  border-radius: 100vw;
+  padding: 0 1% 0 0;
+}
+
+.cat-item a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-l);
+  text-align: start;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.all-cat {
+  background-color: #212121;
+
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  /* border-radius:  0 100vw 100vw 0; */
+}
+
+.all-cat div a {
+  font-size: 1.1rem !important;
+  font-weight: bold;
+}
+/* -------------------------- */
+/*-------- End cat -------- */
+/* -------------------------- */
+
+.show-product-container {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.products-container {
+  grid-column: 1;
+}
+
+
+
+/* -------------------------- */
+/*-------- Font place-------- */
+/* -------------------------- */
+.font-sm {
+  font-size: 1rem;
+}
+
+.font-md {
+  font-size: 1.25rem;
+}
+/* -------------------------- */
+/*--------End Font place----- */
+/* -------------------------- */
+
+
+
+
+
+/* -------------------------- */
+/*--------carousel----------- */
+/* -------------------------- */
+
+.carousel-element {
+  aspect-ratio: 3/1;
+}
+
+.carousel-info {
+  /* transform: translate(2%,-33%); */
+  padding-inline-start: 5%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-info h3 {
+  font-size: 3cqw;
+}
+
+.carousel-info h5 {
+  font-size: 1.5cqw;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-info .btn {
+  font-size: 1.5cqw;
+  width: fit-content;
+}
+/* -------------------------- */
+/*--------End carousel------- */
+/* -------------------------- */
+
+.spacemakeOrder {
+  opacity: 0 !important;
+  transform: translate(0, 0) !important;
+  position: static !important;
+}
+
+@media (orientation: portrait) {
+/*--------------------------- */
+/*--------Navbar Mobile------ */
+/* -------------------------- */
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar>.navberpc {
+    padding: 2% 3%;
+  }
+
+  .nav-item-none-sm {
+    display: none !important;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+/* -------------------------- */
+/*--------carousel----------- */
+/* -------------------------- */
+  .carousel-info h3 {
+    font-size: 5cqw;
+  }
+
+  .carousel-info h5 {
+    font-size: 2.5cqw;
+  }
+
+  .carousel-info .btn {
+    font-size: 2.5cqw;
+  }
+
+}
+
+@media(max-width:1200px) {
+  .spacemakeOrder {
+    display: block;
+  }
+
+  .spaceFromOrderBtn {
+    display: block;
+  }
+
+  .show-product-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  /* -------------------------- */
+/*--------Order Box----------- */
+/* -------------------------- */
+
+  .orders-container {
+    display: none;
+    position: fixed !important;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #fff;
+    overflow: auto;
+  }
+
+  .order-container {
+    border: none;
+
+  }
+
+  .order-btn {
+    /* position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 90% !important;
+    transform: translate(-50%, -25%); */
+  }
+
+
+  .order-title,
+  .order-btn {
+    font-size: 3.5vw;
+  }
+
+  .order-note {
+    min-height: 10vh !important;
+  }
+    /* -------------------------- */
+/*--------End Order Box----------- */
+/* -------------------------- */
+
+  .font-md {
+    font-size: 2rem;
+  }
+
+  .font-sm {
+    font-size: 1.5rem;
+  }
+
+
+  .nud-container>div:not(.pos-add-to) {
+    width: 2.5vw;
+  }
+
+  .open-order {
+    display: block;
+  }
+
+  .order-box-controler {
+    display: block;
+  }
+
+
+}
+
+
+
+@media(max-width:960px) {
+  .show-product-container {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  .nud-container>div:not(.pos-add-to) {
+    width: 3.5vw;
+  }
+}
+
+@media(max-width:767px) {
+
+  .nud-container>div:not(.pos-add-to) {
+    width: 7vw;
+  }
+
+  .footerLogo {
+    width: 1.5rem;
+  }
+
+  .all-cat {
+    width: 7rem;
+    height: 4rem;
+  }
+
+  .cat-img {
+    width: 4rem;
+  }
+}
+
+@media(max-width:576px) {
+  .font-md {
+    font-size: 1.4rem;
+  }
+
+  .font-sm {
+    font-size: 1.2rem;
+  }
+
+  .font-md {
+    font-size: 1.4rem;
+  }
+
+  .font-sm {
+    font-size: 1.2rem;
+  }
+}

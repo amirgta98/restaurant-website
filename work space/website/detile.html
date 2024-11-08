@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link rel="stylesheet" href="../../asset/plugin/Bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../../asset/plugin/swiper/swiper.css">
+  <link rel="stylesheet" href="../../asset/style/general.css">
+  <link rel="stylesheet" href="../../asset/style/website/home.css">
+  <link rel="stylesheet" href="../../asset/style/website/Detaels.css">
+  <style>
+  </style>
+
+</head>
+
+<body class="position-relative">
+  <a href="home.html" class="back-icon ">
+    <svg viewBox="0 0 24 24" fill="none">
+      <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="#000000" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </a>
+  <div class="web-container">
+    <div class="alert d-none" role="alert" id="FormError">
+      A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div id="DeleteAllItem" class="modal fade DeleteAllItem " id="" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">All item will delete</h5>
+
+          </div>
+          <div class="modal-body">
+            there is no way to have item againe
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary cansel-BTn" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary do-action-Btn">delete All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn btn-main-color open-order text-light bold text-center" data-bs-toggle="collapse"
+      data-bs-target="#orders-container" aria-expanded="false" aria-controls="orders-container">go to order</div>
+
+    <main class="show-product-container mt-5">
+      <div class=" products-container mt-5">
+        <h2 class="mb-5">delivery address:</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+              <button class="nav-link btn btn-main-color w-100 p-2 mb-3 collapsed mainBTn"
+              data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >Pick up: 3333 Cavendish store 365
+            </button>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body PickUp-contect">
+                <div class="tree-div-childe1 mb-2">
+                  <form action="" class="d-flex justify-content-around">
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                    <label class="btn btn-main-color w-25" for="option1">Dain In</label>
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn btn-main-color w-25" for="option2">Pick Up</label>
+                  </form>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+          <button class="nav-link btn btn-main-color w-100 p-2 mb-3  myAdress-Btn accordion-button collapsed mainBTn"
+          data-bs-toggle="collapse" data-bs-target="#myAdressAcordion" aria-expanded="false" aria-controls="myAdressAcordion"  >
+            <span>My Adress</span>
+          </button>
+          <div id="myAdressAcordion" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="prevAdress">
+                <ul class="list-group mb-3">
+                  <li class="list-group-item " onclick="PrevLiSelect(this)"> <strong class="li-Title">Home:</strong>1534 guy concordia 310</li>
+                  <li class="list-group-item " onclick="PrevLiSelect(this)"> <strong class="li-Title">Work:</strong>2633 rene levesqu 463</li>
+                  <li class="list-group-item " onclick="PrevLiSelect(this)"> <strong class="li-Title">Friends home:</strong>7362 sherbrook partment 527</li>
+        
+                </ul>
+        
+                <button class="btn btn-main-color w-100 d-block" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  add new adress
+                </button>
+                <div class="collapse" id="collapseExample">
+                  <div class=" card-body ">
+        
+                    <form class="row g-3 mt-4" id="adress-info">
+        
+                      <div class="col-12">
+                        <label for="adressName" class="form-label">Address name</label>
+                        <input type="text" class="form-control" id="adressName" placeholder="1234 Main St">
+                      </div>
+                      <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="col-12">
+                        <label for="Buzz" class="form-label">Apartment or Buzz</label>
+                        <input type="text" class="form-control" id="Buzz" placeholder="1234 Main St">
+                      </div>
+                      <div class="col-12">
+                        <label for="phonenumber" class="form-label">Mobile number</label>
+                        <input type="number" class="form-control" oninput="charLimit(this,11)" id="phonenumber"
+                          placeholder="Apartment, studio, or floor">
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-main-color pill2 text-light">Add New</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+        
+                </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="orders-container  ps-3 pt-0 position-sticky top-0" id="orders-container">
+        <div class="order-container position-sticky   p-2 pt-0">
+          <div class="order-box-controler">
+            <img src="../../asset/svg/general/arrow-sm-left-svgrepo-com.svg" alt=""   data-bs-toggle="collapse" data-bs-target="#orders-container" aria-expanded="false" aria-controls="orders-container">
+          </div>
+  
+          <div class="d-flex justify-content-between  align-items-center">
+            <h5 id="order-title" class="order-title font-md m-0">Orders <span></span></h5>
+            <img src="../../asset/svg/general/trash-svgrepo-com.svg" alt="" class="deletAllItem">
+          </div>
+          <hr>
+  
+          <ul class="list-unstyled accordion" id="accordionPanelsStayOpenExample">
+            <li class="order-Item accordion-item border-0 border-bottom-1  ">
+              <div class="accordion-header">
+  
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="m-0 font-sm"> <strong>vegan pizaa</strong> </h6>
+                  <button class="btn show-sub-toping  p-0" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse2" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                        fill="#000000" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="font-sm">150$</h6>
+                  <div class="nud-container d-flex  justify-content-around  align-self-end  shadow-sm   ">
+                    <div class="nud-mines  "><img src="../../asset/svg/general/minus.svg" alt=""></div>
+                    <div class="nud-num ">
+                      <h5>99</h5>
+                    </div>
+                    <div class="nud-plus  "><img src="../../asset/svg/general/plus.svg" alt=""></div>
+  
+                  </div>
+                </div>
+              </div>
+              <div id="panelsStayOpen-collapse2" class="accordion-collapse collapse ">
+                <div class="accordion-body   p-1 ">
+                  <ul class="list-group p-0 ">
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 rounded-0">Cras justo odio</li>
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 rounded-0">Dapibus ac facilisis in
+                    </li>
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 rounded-0">Morbi leo risus</li>
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 rounded-0">Porta ac consectetur ac
+                    </li>
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 border-bottom-0 rounded-0">Vestibulum
+                      at eros</li>
+                  </ul>
+                </div>
+              </div>
+  
+  
+            </li>
+            <li class="order-Item accordion-item border-0 border-bottom-1 ">
+              <div class="accordion-header ">
+  
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="m-0 font-sm"> <strong>vegan pizaa</strong> </h6>
+                  <button class="btn show-sub-toping  p-0" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse3" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z"
+                        fill="#000000" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h6 class="font-sm">150$</h6>
+                  <div class="nud-container d-flex  justify-content-around  align-self-end  shadow-sm   ">
+                    <div class="nud-mines  "><img src="../../asset/svg/general/minus.svg" alt=""></div>
+                    <div class="nud-num ">
+                      <h5>99</h5>
+                    </div>
+                    <div class="nud-plus  "><img src="../../asset/svg/general/plus.svg" alt=""></div>
+  
+                  </div>
+                </div>
+              </div>
+              <div id="panelsStayOpen-collapse3" class="accordion-collapse collapse ">
+                <div class="accordion-body   p-1 ">
+                  <ul class="list-group p-0 ">
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 rounded-0">Cras justo odio</li>
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 rounded-0">Dapibus ac facilisis in
+                    </li>
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 rounded-0">Morbi leo risus</li>
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 rounded-0">Porta ac consectetur ac
+                    </li>
+                    <li class="list-group-item  font-sm border-start-0 border-end-0 border-bottom-0 rounded-0">Vestibulum
+                      at eros</li>
+                  </ul>
+                </div>
+              </div>
+  
+  
+            </li>
+  
+          </ul>
+          <hr class="m-0 ">
+          <div class="d-flex justify-content-between ">
+            <h5 class="m-0 font-md">total:</h5>
+            <h5 class="m-0 font-md">250$</h5>
+          </div>
+          <textarea placeholder="note" class="w-100 form-control  shadow-none order-note font-sm"></textarea>
+          <div class="spaceFormOrdBtn" ></div>
+  
+          <div class="btn btn-main-color w-100  text-light bold order-btn rounded-main position-sticky bottom-0 text-center">order</div>
+  
+  
+        </div>
+      </div>
+    </main>
+
+
+
+    <div class="spaceFromOrderBtn"></div>
+
+
+  </div>
+
+
+
+
+  <script src="../../asset/plugin/Bootstrap/bootstrap.js"></script>
+  <script src="../../asset/plugin/Jqury/Jqury.js"></script>
+  <script src="../../asset/script/general.js"></script>
+  <script src="../../asset/script/orderBox.js"></script>
+  
+  <script>
+
+    function PrevLiSelect(element) {
+      $(".prevAdress .list-group-item").removeClass("active"); // حذف کلاس active از همه عناصر
+      $(element).addClass("active"); // اضافه کردن کلاس active به عنصر کلیک شده
+      closeMyaddres();
+      showAlert(null,null,"#FormError",false);
+      var addresTitle = $(element).find(".li-Title").text()
+      var detile = $(element).text().replace(addresTitle,'')
+      $(".myAdress-Btn span").empty();
+      $(".myAdress-Btn span").append(`<strong >${addresTitle}:</strong> ${detile}`);
+
+
+
+
+
+
+    }
+
+    function closeMyaddres() {
+      $('#myAdressAcordion').collapse('hide');
+      $('#collapseExample').collapse('hide');
+    }
+   function ResetAcordion (){
+    $(".PickUp-contect form input").prop("checked" ,false)
+   }
+   $(".mainBTn").click(function(){
+    $(".mainBTn").removeClass("active-accordion");
+    $(this).addClass("active-accordion");
+   })
+   $("#adress-info").submit(function (event) {
+  event.preventDefault();
+
+  const formData = {};
+  let isValid = true; // Assume the form is valid initially
+  const emptyFields = []; // Array to store names or IDs of empty fields
+
+  // Check each input to ensure it has a value
+  $(this).find("input").each(function () {
+    const inputId = $(this).attr("id");
+    const inputName = $(this).attr("name") || inputId; // Use name if available; otherwise, fall back to id
+    const inputValue = $(this).val().trim();
+    formData[inputId] = inputValue;
+
+    if (inputValue) {
+      $(this).removeClass("error"); // Remove error class if filled
+    } else {
+      isValid = false; // Set isValid to false if any input is empty
+      $(this).addClass("error"); // Optionally, add an error class to empty fields
+      emptyFields.push(inputName); // Add the name or id of the empty field
+    }
+  });
+
+  if (isValid) {
+    const { adressName, phonenumber, ...addressDetile } = formData;
+
+    // Create list item with template string
+    $(".list-group-item").removeClass("active");
+    const liStyle = `
+        <li class="list-group-item active" onclick="PrevLiSelect(this)">
+            <strong class="li-Title">${adressName}:</strong> ${Object.values(addressDetile).join(" ")}
+        </li>`;
+    $(".prevAdress ul").append(liStyle);
+    $(".myAdress-Btn span").empty();
+    $(".myAdress-Btn span").append(`<strong >${adressName}:</strong> ${Object.values(addressDetile).join(" ")}`);
+
+    // Close div
+    closeMyaddres();
+    showAlert(
+      null,
+      null,
+      "#FormError",
+      false
+    );
+  } else {
+    // Show alert with names of empty fields
+    showAlert(
+      `Please fill the following fields: ${emptyFields.join(", ")}`, // Join empty field names or IDs
+      alertType.Danger,
+      "#FormError",
+      true
+    );
+  }
+});
+
+
+  </script>
+
+</body>
+
+</html>
