@@ -41,6 +41,9 @@
 .accordion-button::after {
     width: var(--bs-accordion-btn-icon-width);;
 }
+.adress-conteoler > *{
+    width: 1.5rem;
+}
 @media (orientation: portrait) {
     .products-container{
         width: 100%;

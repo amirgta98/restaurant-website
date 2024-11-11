@@ -132,8 +132,7 @@
     </div>
     <div class="btn btn-main-color open-order text-light bold text-center" data-bs-toggle="collapse"
       data-bs-target="#orders-container" aria-expanded="false" aria-controls="orders-container">go to order</div>
-
-    <main class="show-product-container mt-4">
+    <main class="show-product-container mt-4 ">
         <div class="products-container">
             <div class="">
                 <div class="thanks-text ">
@@ -211,7 +210,7 @@
     </main>
 
 
-    <footer class="shadow-sm d-flex justify-content-between p-4 mt-4 mb-2 align-items-center rounded-3">
+    <footer class="shadow-sm d-flex justify-content-between p-4 mt-4 mb-2 align-items-center rounded-3 position-fixed w-100 bottom-0">
       <div class="d-flex gap-3 w-50">
         <a href="">
           <img src="../../asset/img/general/instagram.webp" alt="" class="footerLogo">
@@ -239,10 +238,16 @@
 
 
 
+
   <script src="../../asset/plugin/Bootstrap/bootstrap.js"></script>
   <script src="../../asset/plugin/Jqury/Jqury.js"></script>
   <script src="../../asset/script/general.js"></script>
   <script src="../../asset/script/orderBox.js"></script>
+  <script>
+    footer = $('footer').outerHeight();
+    footer = footer + footer / 4
+    $(".open-order").css("bottom", footer);
+</script>
 </body>
 
 </html>
