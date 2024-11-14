@@ -22,11 +22,10 @@ $(".card-type2").each(function (indexInArray, valueOfElement) {
       }
     });
   });
-  $(".order-container .nud-container").each(function (indexInArray, valueOfElement) {
+  $(".order-container .order-Item").each(function (indexInArray, valueOfElement) {
     var plus = $(valueOfElement).find(".nud-plus");
     var number = $(valueOfElement).find(".nud-num h5");
     var mines = $(valueOfElement).find(".nud-mines");
-
     // افزودن event handler برای دکمه ی plus
     plus.on("click", function () {
       var currentNumber = parseInt(number.text());
@@ -39,12 +38,16 @@ $(".card-type2").each(function (indexInArray, valueOfElement) {
       if (currentNumber > 1) {
         number.text(currentNumber - 1);
       } else {
-        $(valueOfElement).find(".add-to-order .add-to-btn").removeClass("d-none")
-        $(valueOfElement).find(".add-to-order .nud-container").addClass("d-none")
-
-      }
+        $(valueOfElement).animate({
+          height: '0',
+          opacity:'0'
+        },300,function(){
+          $(this).addClass("d-none")
+          refreshNumberOfItem($(valueOfElement).closest(".order-container"))
+        })}
     });
   });
+  
   $(".add-to-order").each(function (indexInArray, valueOfElement) {
     $(valueOfElement).find(".add-to-btn").click(() => {
       $(valueOfElement).find(".add-to-btn").addClass("d-none")

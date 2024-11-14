@@ -16,64 +16,7 @@
 </head>
 
 <body class="position-relative">
-  <div id="deleteItem" class="modal fade DeleteAllItem  " id="" tabindex="-1" role="dialog"
-  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">All item will delete</h5>
 
-      </div>
-      <div class="modal-body">
-        there is no way to have item againe
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary cansel-BTn" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary do-action-Btn">delete</button>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div id="editeItem" class="modal fade editeItem  " id="" tabindex="-1" role="dialog"
-  aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">edite addres  </h5>
-      </div>
-      <div class="alert d-none" role="alert" id="EditeFormError">
-        A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-      </div>
-      <div class="modal-body">
-        <form class="row g-3" id="adress-edite">
-        
-          <div class="col-12">
-            <label for="adressName" class="form-label">Address name</label>
-            <input type="text" class="form-control" id="adressName" placeholder="1234 Main St">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="col-12">
-            <label for="Buzz" class="form-label">Apartment or Buzz</label>
-            <input type="text" class="form-control" id="Buzz" placeholder="1234 Main St">
-          </div>
-          <div class="col-12">
-            <label for="phonenumber" class="form-label">Mobile number</label>
-            <input type="number" class="form-control" oninput="charLimit(this,11)" id="phonenumber"
-              placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-main-color pill2 text-light edite-btn">edite Adress</button>
-    
-          </div>
-        </form>
-      </div>
-
-    </div>
-  </div>
-  </div>
 
   <a href="home.html" class="back-icon ">
     <svg viewBox="0 0 24 24" fill="none">
@@ -84,6 +27,64 @@
   <div class="web-container">
     <div class="alert d-none" role="alert" id="FormError">
       A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+    </div>
+    <div id="deleteItem" class="modal fade DeleteAllItem  " id="" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">this item will delete</h5>
+  
+        </div>
+        <div class="modal-body">
+          there is no way to have item againe
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary cansel-BTn" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary delete-prve-addres">delete</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="editeItem" class="modal fade editeItem  " id="" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">edite addres  </h5>
+        </div>
+        <div class="alert d-none" role="alert" id="EditeFormError">
+          A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+        </div>
+        <div class="modal-body">
+          <form class="row g-3" id="adress-edite">
+          
+            <div class="col-12">
+              <label for="adressName" class="form-label">Address name</label>
+              <input type="text" class="form-control" id="adressName" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-12">
+              <label for="Buzz" class="form-label">Apartment or Buzz</label>
+              <input type="text" class="form-control" id="Buzz" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="phonenumber" class="form-label">Mobile number</label>
+              <input type="number" class="form-control" oninput="charLimit(this,11)" id="phonenumber"
+                placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-main-color pill2 text-light edite-btn">edite Adress</button>
+      
+            </div>
+          </form>
+        </div>
+  
+      </div>
+    </div>
     </div>
     <div id="DeleteAllItem" class="modal fade DeleteAllItem " id="" tabindex="-1" role="dialog"
       aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -246,7 +247,7 @@
                   <div class="nud-container d-flex  justify-content-around  align-self-end  shadow-sm   ">
                     <div class="nud-mines  "><img src="../../asset/svg/general/minus.svg" alt=""></div>
                     <div class="nud-num ">
-                      <h5>99</h5>
+                      <h5>3</h5>
                     </div>
                     <div class="nud-plus  "><img src="../../asset/svg/general/plus.svg" alt=""></div>
   
@@ -453,10 +454,11 @@ $(document).on("click", ".adress-conteoler .delete-addres", function() {
     $("#deleteItem").modal("show");
 });
  var existenedAddres = $(".prevAdress .list-group-item:not(.d-none,.error-li)").length
-$("#deleteItem .do-action-Btn").click(function(){
-
+$("#deleteItem .delete-prve-addres").click(function(){
   itemToDelete.addClass("d-none")
   existenedAddres = $(".prevAdress .list-group-item:not(.d-none,.error-li)").length
+  $("#deleteItem").modal("hide");
+
   if(existenedAddres===0){
     $(".prevAdress .error-li").removeClass("d-none")
   }  
@@ -489,7 +491,6 @@ $("#adress-edite").submit(function (event) {
 
     if (inputValue) {
       $(this).removeClass("error");
-      console.log(formData)
     } else {
       isValid = false;
       $(this).addClass("error");
@@ -505,7 +506,6 @@ $("#adress-edite").submit(function (event) {
       false
     );
     $("#editeItem").modal("hide");
-    console.log("داده نهایی")
     itemToEdite.find(".li-Title").text(adressName)    
     itemToEdite.find(".adress-detile").text(Object.values(addressDetile).join(" "))
     
